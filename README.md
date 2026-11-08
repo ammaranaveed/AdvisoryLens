@@ -8,6 +8,12 @@ Analysis (EDA) and presents the results in an interactive Streamlit dashboard.
 
 **Authors:** Ammara Naveed, Sadia Shafiq, Afia Sajal
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://advisorylens.streamlit.app/)
+
+**Live dashboard:** <https://advisorylens.streamlit.app/>
+*(Hosted on the free Streamlit Community Cloud. If nobody has used it for a while, the app goes to sleep:
+open the link and press the wake-up button, it starts again in about a minute.)*
+
 ---
 
 ## Table of Contents
@@ -227,6 +233,8 @@ streamlit run app.py
 ```
 
 The dashboard opens in your browser (`http://localhost:8501`). Press `Ctrl + C` in the terminal to stop it.
+A hosted copy is available at <https://advisorylens.streamlit.app/>; it is redeployed automatically whenever the
+`main` branch of this repository changes.
 
 **Open the notebook** (analysis with explanations)
 
@@ -243,6 +251,8 @@ All charts are saved in `outputs/visualizations/`.
 `app.py` turns the results of the ETL and EDA work into an interactive security analytics dashboard. It is an
 additional layer: it only **reads** the existing SQLite database (opened in read-only mode) and does not change the
 ETL pipeline, the database, the notebook or `src/eda.py`. The numbers in the dashboard are the same as in the notebook.
+
+**Try it online: <https://advisorylens.streamlit.app/>** (or run it yourself, see [Usage](#9-usage)).
 
 ![Dashboard overview](docs/screenshots/dashboard_overview.png)
 
